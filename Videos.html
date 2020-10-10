@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <title>Videos</title>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" />
+<style>
+
+header{
+  background-color: rgb(233,69,96);
+  height: auto;
+  padding: 2%;
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+}
+
+body {
+  background-color: rgb(22,33,62);
+  color: #011a32;
+  font-family: "Oswald", sans-serif;
+  height: auto;
+  
+}
+
+h1 {
+  font-family: courier new;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: courier new;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: courier;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+nav {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: rgb(61, 59, 59);
+}
+
+
+ul { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    } 
+  
+li { 
+    float: left; 
+} 
+
+li a { 
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+} 
+
+li a:hover { 
+    background-color: rgb(255,165,165); 
+    color: black; 
+} 
+
+video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li onclick="location.href = 'index.html';"><a href="#">Home</a></li>
+        <li onclick="location.href = 'Music.html';"><a href="#">Music</a></li>
+        <li onclick="location.href = 'Images.html';"><a href="#">Images</a></li>
+        <li onclick="location.href = 'Videos.html';"><a href="#">Videos</a></li>
+        <li onclick="location.href = 'About.html';"><a href="#">ABOUT</a></li>
+        
+      </ul>
+    </nav>
+
+
+  </header>
+
+
+  <video  width="1080" autoplay>
+    <source src="Palanga.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+</body>
+</html>
