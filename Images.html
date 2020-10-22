@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Images page">
+  <meta name="keywords" content="Algorithms, WWWLab1, Images">
+  <meta name="author" content="Sovannrithyreach Kim">
+  <meta name="creation-date" content="2020">
+  <meta name="expiry-date" content="never">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Images</title>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css" />
@@ -11,7 +16,7 @@
 header{
   background-color: rgb(233,69,96);
   height: auto;
-  padding: 2%;
+  padding: 1%;
   font-style: italic;
 }
 
@@ -20,6 +25,10 @@ body {
   background-color: rgb(22,33,62);
   color: #011a32;
   font-family: "Oswald", sans-serif;
+}
+
+body {
+  background: #0A122A;
 }
 
 h1 {
@@ -111,12 +120,22 @@ li a:hover {
 }
 
  .radio-btns:hover .radio-btns__btn2:not(:hover) {
-	 filter: grayscale(100%);
+	 filter: grayscale(177.5%);
 }
  .radio-btns:hover .radio-btns__btn2:not(:hover)::after {
 	 background-color: rgba(0, 0, 0, 0.5);
 }
 
+footer p{
+  font-size: 15px;
+}
+
+.leftfooter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
 
 .radio-btns__btn2 {
 	 position: relative;
@@ -129,7 +148,7 @@ li a:hover {
 	 position: absolute;
 	 top: 0;
 	 left: 0;
-	 width: 100%;
+	 width: 177.8%;
 	 height: 100%;
 	 background-color: rgba(0, 0, 0, 0);
 	 transition: 0.3s;
@@ -139,6 +158,44 @@ li a:hover {
 	 display: block;
 	 width: 177.5%;
 	 max-width: 1000%;
+}
+
+
+
+.table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+}
+.table {
+    border-radius: 5px;
+    font-size: 19.5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: rgb(155,164,180);
+}
+.table td, .table th {
+    text-align: center;
+    padding: 10px;
+}
+.table thead th {
+    color: #ffffff;
+    background:  rgb(228, 63, 90);
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+.table thead th:nth-child(odd) {
+    color: #ffffff;
+    background:rgb(64,112,136);
+}
+
+.table tr:nth-child(even) {
+    background:rgb(155,164,180);
 }
  
  
@@ -189,5 +246,72 @@ li a:hover {
     </div>
   </div>
   
+
+
+  <div class="table-wrapper">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>NO.</th>
+          <th>Location</th>
+          <th>ISO</th>
+          <th>Exposure</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/320s</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/800s</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/100s</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/160s</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/160s</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Warsaw</td>
+          <td>100</td>
+          <td>1/500s</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Vilnius</td>
+          <td>100</td>
+          <td>1/200s</td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <footer>
+
+    <div class="leftfooter">
+  
+  
+      <p>Sovannrithyreach Kim &copy; 2020</p>
+    </div>
+  
+  
+  </footer>
+
 </body>
 </html>

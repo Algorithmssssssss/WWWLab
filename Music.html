@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="description" content="Music page">
+	<meta name="keywords" content="Algorithms, WWWLab1, lofi, music">
+	<meta name="author" content="Sovannrithyreach Kim">
+	<meta name="creation-date" content="2020">
+	<meta name="expiry-date" content="never">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music</title>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css" />
@@ -11,8 +16,20 @@
 header{
   background-color: rgb(233,69,96);
   height: auto;
-  padding: 2%;
+  padding: 1%;
   font-style: italic;
+}
+
+footer p{
+  font-size: 15px;
+}
+
+footer{
+	clear: both;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -135,8 +152,11 @@ body {
 	}
 }
  
- 
- 
+body {
+  background: #0A122A;
+}
+
+
 h1 {
   font-family:  'Courier New', monospace;
   font-size: 50px;
@@ -189,6 +209,7 @@ li a:hover {
 } 
 
 
+
 </style>
 </head>
 <body>
@@ -212,38 +233,44 @@ li a:hover {
 
   
   <br>
-  
-
-  
-  
   <audio id="lofi" autoplay controls loop hidden>
-    <source src="lofi.mp3" type="audio/mpeg">
+	<source src="lofi2.mp3" type="audio/mpeg">
   </audio>
-  <script>document.getElementById("lofi").volume = 0.1</script>
 
   <script>
-    var audioElement= document.getElementById("lofi");
-    function togglePlaylofi() {
-      if (audioElement.paused) {
-          audioElement.play();
-      }
-      else {
-          audioElement.pause();
-      }
-    };
+	var audioElement = document.getElementById("lofi");
+	document.getElementById("lofi").volume = 0.3
+	function togglePlaylofi() 
+	{
+		if (audioElement.paused) {
+		audioElement.play();
+
+		}
+		else {
+		audioElement.pause();
+
+		}
+	};
   </script>
+
+
 
 <h5>
   <button type="button" onclick="togglePlaylofi()" class="skew-button"><span>Play/Pause</span></button>
 </h5>
 
-
-
-
-
 </body>
 
+<footer>
 
+	<div class="leftfooter">
+  
+  
+		  <p>Sovannrithyreach Kim &copy; 2020</p>
+	  </div>
+  
+  
+  </footer>
   
 
 </html>

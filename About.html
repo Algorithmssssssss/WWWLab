@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="About Sovannrithyreach Kim">
+  <meta name="keywords" content="Algorithms, WWWLab1, Portfolio">
+  <meta name="author" content="Sovannrithyreach Kim">
+  <meta name="creation-date" content="2020">
+  <meta name="expiry-date" content="never">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ABOUT</title>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css" />
@@ -11,14 +16,29 @@
 header{
   background-color: rgb(233,69,96);
   height: auto;
-  padding: 2%;
+  padding: 1%;
   font-style: italic;
 }
 body {
-  background-color: rgb(22,33,62);
+
   color: #011a32;
   font-family: "Oswald", sans-serif;
   
+}
+
+footer p{
+  font-size: 15px;
+}
+
+.leftfooter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+body {
+  background: #0A122A;
 }
 
 h1 {
@@ -73,8 +93,12 @@ li a:hover {
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-body { background:rgb(30,30,40); }
 form { max-width:420px; margin:50px auto; }
+
+iframe{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .feedback-input {
   color:white;
@@ -139,13 +163,28 @@ textarea {
   <h1>THIS IS THE ABOUT PAGE</h1>
   <h2>ABOUT ME</h2>
   <p>I am an undergrad student, currently residing in Lithuania. I am majoring in Cyber Security. I love taking pictures of beautiful landscapes and portraits for friends and families. As you can probably see above, this is going to be a place where I will bottle up my emotions and feelings and keep a log to what I do with my life. In videos, pictures and words form.</p>
+    <a>
+      <iframe src="https://drive.google.com/file/d/1CvOKXEQHXanL_iQ1LkgfDD0pqgbHMdDF/preview" width="640" height="480"></iframe>
+    </a>
 
-  <form>      
+  <form action="contact.php" method="POST">      
     <input name="name" type="text" class="feedback-input" placeholder="Name" />   
     <input name="email" type="text" class="feedback-input" placeholder="Email" />
     <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
     <input type="submit" value="SUBMIT"/>
   </form>
+
+  <footer>
+
+    <div class="leftfooter">
+  
+  
+      <p>Sovannrithyreach Kim &copy; 2020</p>
+    </div>
+  
+  
+  </footer>
+
 
 </body>
 </html>

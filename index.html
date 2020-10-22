@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
+  <meta name="description" content="Homepage to Algorithms">
+  <meta name="keywords" content="Algorithms, WWWLab1">
+  <meta name="author" content="Sovannrithyreach Kim">
+  <meta name="creation-date" content="2020">
+  <meta name="expiry-date" content="never">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content= "width=device-width, initial-scale=1.0">
   <title>Home</title>
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -11,15 +17,17 @@
 header{
   background-color: rgb(233,69,96);
   height: auto;
-  padding: 2%;
+  padding: 1%;
 }
 
 
 body {
+	display: flex;
     background-color: rgb(22,33,62);
     color: #011a32;
     font-family: "Oswald", sans-serif;
 	  font-style: italic;
+	flex-direction: column;
 }
 
  .container {
@@ -351,10 +359,23 @@ body {
 it should always be at the center of the browser */
 .wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 46.5%;
   transform: translate(-20%, 200%);
-  width: 600px;
+
+}
+
+footer p{
+  font-size: 15px;
+  position: absolute;
+  top: 90%;
+}
+
+.leftfooter{
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -417,16 +438,6 @@ to align it properly */
 
 
 
-footer{
-  position: relative;
-  right: 20;
-  bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  align-items: center;
-  align-content: center;
-}
 
 </style>
 </head>
@@ -482,21 +493,22 @@ footer{
 <br>
 <br>
 
-
-<footer>
-
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
 <div class="wrapper">
-  <ul>
-    <li class="facebook"><a href="https://web.facebook.com/algorithmsssss/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" ></i></a></li>
-    <li class="instagram"><a href="https://www.instagram.com/algorithm_s/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a></li>
-    
-    
-  </ul>
+	<ul>
+	  <li class="facebook"><a href="https://web.facebook.com/algorithmsssss/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true" ></i></a></li>
+	  <li class="instagram"><a href="https://www.instagram.com/algorithm_s/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a></li>
+	  
+	  
+	</ul>
 </div>
 
+<footer>
+	<div class="leftfooter">
+		<p>Sovannrithyreach Kim &copy; 2020</p>
+	</div>
 
 </footer>
 
